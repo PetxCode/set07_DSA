@@ -22,14 +22,14 @@ import fsPromise from "fs/promises";
 //   },
 // );
 
-// try {
-//   const data = fs.readFileSync(path.join(__dirname, "ignore", "text.txt"), {
-//     encoding: "utf-8",
-//   });
-//   console.log("Reading from Sync", data);
-// } catch (error) {
-//   console.log(error);
-// }
+try {
+  const data = fs.readFileSync(path.join(__dirname, "ignore", "text.txt"), {
+    encoding: "utf-8",
+  });
+  console.log("Reading from Sync", data);
+} catch (error) {
+  console.log(error);
+}
 
 const readFile = async () => {
   try {
